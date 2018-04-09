@@ -1,0 +1,171 @@
+{name:'Gross Margin', calc:'GrossProfit/Revenue', required: ['GrossProfit','Revenue'
+  ], type:'Profitability Ratio', synonyms: ['Gross Profit Margin'
+  ]
+},
+{name:'Operating Margin', calc:'OperatingProfit/Revenue', required: ['OperatingProfit','Revenue'
+  ], type:'Profitability Ratio', synonyms: ['Return on Sales'
+  ]
+},
+{name:'Pre-Tax Margin', calc:'Pre-TaxProfit/Revenue', required: ['PreTaxProfit','Revenue'
+  ], type:'Profitability Ratio', synonyms: ['Pre-Tax Profit Margin'
+  ]
+},
+{name:'Net Profit Margin', calc:'NetProfit/Revenue', required: ['NetProfit','Revenue'
+  ], type:'Profitability Ratio', synonyms: ['Profit Margin'
+  ]
+},
+{name:'Return on Assets (ROA)', calc:'OperatingProfit/TotalAssets', required: ['OperatingProfit','TotalAssets'
+  ], type:'Profitability Ratio', synonyms: ['Return on Total Assets'
+  ]
+},
+{name:'Return on Equity (ROE)', calc:'NetProfit/ShareholdersEquity', required: ['NetProfit','ShareholdersEquity'
+  ], type:'Profitability Ratio'
+},
+{name:'Return on Capital Employed (ROCE)', calc:'OperatingProfit/(TotalAssets-CurrentLiabilities)', required: ['OperatingProfit','TotalAssets','CurrentLiabilities'
+  ], type:'Profitability Ratio', synonyms: ['Return on Capital (ROC)','Return on Invested Capital (ROIC)'
+  ]
+},
+{name:'Return on Retained Earnings (RORE)', calc:'NetProfit/RetainedEarnings', required: ['NetProfit','RetainedEarnings'
+  ], type:'Profitability Ratio'
+},
+{name:'Return on Net Assets', calc:'NetProfit/(TotalAssets-TotalLiabilities)', required: ['NetProfit','TotalAssets','TotalLiabilities'
+  ], type:'Profitability Ratio'
+},
+{name:'Current Ratio ', calc:'CurrentAssets/CurrentLiabilities', required: ['CurrentAssets','CurrentLiabilities'
+  ], type:'Liquidity Ratio', synonyms: ['Working Capital Ratio'
+  ]
+},
+{name:'Quick Ratio', calc:'(CurrentAssets-Inventory)/CurrentLiabilities', required: ['CurrentAssets','Inventory','CurrentLiabilities'
+  ], type:'Liquidity Ratio', synonyms: ['Acid Test'
+  ]
+},
+{name:'Cash Ratio', calc:'CashAndCashEquivalents/CurrentLiabilities', required: ['CashAndCashEquivalents','CurrentLiabilities'
+  ], type:'Liquidity Ratio'
+},
+{name:'Working Capital', calc:'CurrentAssets-CurrentLiabilities', required: ['CurrentAssets','CurrentLiabilities'
+  ], type:'Liquidity Ratio'
+},
+{name:'Cash Conversion Cycle', calc:'((Inventory/CostOfSales)+(AccountsReceivable/Revenue)-(AccountsPayable/CostOfSales))*365', required: ['Inventory','CostOfSales','AccountsReceivable','Revenue','AccountsPayable','CostOfSales'
+  ], type:'Liquidity Ratio'
+},
+{name:'Defensive Interval Ratio', calc:'(CashAndCashEquivalents+MarketableSecurities+AccountsReceivable)/((OperatingExpenses-Depreciation)/365))', required: ['CashAndCashEquivalents','MarketableSecurities','AccountsReceivable','OperatingExpenses','Depreciation'
+  ], type:'Liquidity Ratio'
+},
+{name:'Accounts Receivable Turnover', calc:'NetCreditSales/AverageAccountsReceivable', required: ['NetCreditSales','AverageAccountsReceivable'
+  ], type:'Efficiency Ratio', synonyms: ['Receivables Turnover'
+  ]
+},
+{name:'Accounts Payable Turnover', calc:'CostOfSales/AccountsPayable', required: ['CostOfSales','AccountsPayable'
+  ], type:'Efficiency Ratio', synonyms: ['Payables Turnover'
+  ]
+},
+{name:'Day Sales in Inventory', calc:'Inventory/CostOfSales', required: ['Inventory','CostOfSales'
+  ], type:'Efficiency Ratio', synonyms: ['Days Inventory Outstanding'
+  ]
+},
+{name:'Fixed Asset Turnover', calc:'Revenue/Non-CurrentAssets', required: ['Revenue','NonCurrentAssets'
+  ], type:'Efficiency Ratio'
+},
+{name:'Current Asset Turnover', calc:'Revenue/CurrentAssets', required: ['Revenue','CurrentAssets'
+  ], type:'Efficiency Ratio'
+},
+{name:'Total Asset Turnover', calc:'Revenue/TotalAssets', required: ['Revenue','TotalAssets'
+  ], type:'Efficiency Ratio'
+},
+{name:'Cash Turnover', calc:'Revenue/CashAndCashEquivalents', required: ['Revenue','CashAndCashEquivalents'
+  ], type:'Efficiency Ratio'
+},
+{name:'Inventory Turnover', calc:'Revenue/Inventory', required: ['Revenue','Inventory'
+  ], type:'Efficiency Ratio'
+},
+{name:'Average Inventory Period', calc:'(365*Inventory)/Revenue', required: ['Inventory','Revenue'
+  ], type:'Efficiency Ratio'
+},
+{name:'Creditor Days', calc:'(AccountsPayable/CostOfSales)*365', required: ['AccountsPayable','CostOfSales'
+  ], type:'Efficiency Ratio', synonyms: ['Days Payables Outstanding (Average Payment Period)'
+  ]
+},
+{name:'Debtor Days', calc:'(AccountsReceivable/Revenue)*365', required: ['AccountsReceivable','Revenue'
+  ], type:'Efficiency Ratio', synonyms: ['Days Sales Outstanding'
+  ]
+},
+{name:'Accumulated Depreciation to Fixed Assets', calc:'AccumulatedDepreciation/FixedAssets', required: ['AccumulatedDepreciation','FixedAssets'
+  ], type:'Efficiency Ratio'
+},
+{name:'Sales to Administrative Expense Ratio', calc:'Revenue/AdministrativeExpenses', required: ['Revenue','AdministrativeExpenses'
+  ], type:'Efficiency Ratio'
+},
+{name:'Debt Ratio', calc:'TotalLiabilities/TotalAssets', required: ['TotalLiabilities','TotalAssets'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Long-Term Debt to Assets', calc:'Long-TermDebt/TotalAssets', required: ['LongTermDebt','TotalAssets'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Debt to Assets', calc:'TotalDebt/TotalAssets', required: ['TotalDebt','TotalAssets'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Debt to Equity Ratio', calc:'TotalLiabilities/ShareholdersEquity', required: ['TotalLiabilities','ShareholdersEquity'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Capitalisation Ratio', calc:'TotalDebt/(TotalDebt+ShareholdersEquity)', required: ['TotalDebt','TotalDebt','ShareholdersEquity'
+  ], type:'Long-Term Solvency Ratio', synonyms: ['Debt to Capital Ratio'
+  ]
+},
+{name:'Equity Multiplier', calc:'TotalAssets/ShareholdersEquity', required: ['TotalAssets','ShareholdersEquity'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Shareholders Equity Ratio', calc:'ShareholdersEquity/TotalAssets', required: ['ShareholdersEquity','TotalAssets'
+  ], type:'Long-Term Solvency Ratio', synonyms: ['Equity Ratio'
+  ]
+},
+{name:'Interest Cover ', calc:'OperatingProfit/InterestExpense', required: ['OperatingProfit','InterestExpense'
+  ], type:'Long-Term Solvency Ratio', synonyms: ['Times Interest Earned'
+  ]
+},
+{name:'Debt Service Coverage Ratio', calc:'OperatingProfit/(InterestExpense+DebtRepayment)', required: ['OperatingProfit','InterestExpense','DebtRepayment'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Asset Coverage Ratio', calc:'((TotalAssets-IntangibleAssets)-(CurrentLiabilities-Short-TermDebt))/(Short-TermDebt+Long-TermDebt)', required: ['TotalAssets','IntangibleAssets','CurrentLiabilities','ShortTermDebt','LongTermDebt'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Cash Flow Coverage', calc:'OperatingCashFlows/TotalDebt', required: ['OperatingCashFlows','TotalDebt'
+  ], type:'Long-Term Solvency Ratio'
+},
+{name:'Dividend Yield', calc:'DividendPerShare/SharePrice', required: ['DividendPerShare','SharePrice'
+  ], type:'Investment Ratio'
+},
+{name:'Dividend Cover', calc:'EarningsPerShare/DividendPerShare', required: ['EarningsPerShare','DividendPerShare'
+  ], type:'Investment Ratio'
+},
+{name:'Dividend Payout', calc:'DividendPerShare/EarningsPerShare', required: ['DividendPerShare','EarningsPerShare'
+  ], type:'Investment Ratio'
+},
+{name:'Cash Earnings Per Share', calc:'OperatingCashFlows/NumberOfSharesOutstanding', required: ['OperatingCashFlows','NumberOfSharesOutstanding'
+  ], type:'Investment Ratio', synonyms: ['Cash EPS'
+  ]
+},
+{name:'Enterprise Value', calc:'MarketCapitalisation+TotalDebt+PreferredShares+MinorityInterest-CashAndCashEquivalents', required: ['MarketCapitalisation','TotalDebt','PreferredShares','MinorityInterest','CashAndCashEquivalents'
+  ], type:'Investment Ratio'
+},
+{name:'Goodwill to Assets', calc:'Goodwill/TotalAssets', required: ['Goodwill','TotalAssets'
+  ], type:'Investment Ratio'
+},
+{name:'Price to Book (P/B) Ratio', calc:'SharePrice/(ShareholdersEquity/NumberOfSharesOutstanding)', required: ['SharePrice','ShareholdersEquity','NumberOfSharesOutstanding'
+  ], type:'Investment Ratio'
+},
+{name:'Price to Sales (P/S) Ratio', calc:'SharePrice/(Revenue/NumberOfSharesOutstanding)', required: ['SharePrice','Revenue','NumberOfSharesOutstanding'
+  ], type:'Investment Ratio'
+},
+{name:'Price to Cash Flow', calc:'SharePrice/(OperatingCashFlows/NumberOfSharesOutstanding)', required: ['SharePrice','OperatingCashFlows','NumberOfSharesOutstanding'
+  ], type:'Investment Ratio'
+},
+{name:'Retention Ratio', calc:'RetainedEarnings/NetProfit', required: ['RetainedEarnings','NetProfit'
+  ], type:'Investment Ratio', synonyms: ['Plowback Ratio'
+  ]
+},
+{name:'Tobins Q', calc:'(MarketCapitalisation+TotalDebt)/(ShareholdersEquity+TotalDebt)', required: ['MarketCapitalisation','TotalDebt','ShareholdersEquity','TotalDebt'
+  ], type:'Investment Ratio'
+},
+{name:'Price to Earnings (P/E) Ratio', calc:'SharePrice/EarningsPerShare', required: ['SharePrice','EarningsPerShare'
+  ], type:'Investment Ratio'
+}
