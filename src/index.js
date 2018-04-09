@@ -528,7 +528,7 @@ export default class App extends Component {
             <Button
               type="primary"
               disabled={
-                industryName == "" || context == "" || blankQuestionCount > 410
+                industryName == "" || context == "" || blankQuestionCount > 4
               }
               onClick={e => this.nextTab()}
             >
